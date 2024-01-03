@@ -6,7 +6,7 @@ import Meteor from "@meteorrn/core";
 import { createClient } from "./meteor-proxy";
 import type { Server } from "./server/server/main";
 
-Meteor.connect("wss://localhost:3000/websocket", {
+Meteor.connect("ws://localhost:3000/websocket", {
   AsyncStorage: {
     getItem: SecureStore.getItemAsync,
     setItem: SecureStore.setItemAsync,
@@ -27,6 +27,7 @@ export default function App() {
       <Button
         title="Call hello"
         onPress={() => {
+          console.log("Calling hello");
           server.hello().then(setHello);
         }}
       />
