@@ -17,18 +17,18 @@ Meteor.connect("ws://localhost:3000/websocket", {
 const server = createClient<Server>();
 
 export default function App() {
-  const [hello, setHello] = useState("OTHER THING");
+  const [result, setResult] = useState("OTHER THING");
 
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
-      <Text>Hello: {hello}</Text>
+      <Text>Result: {result}</Text>
 
       <Button
-        title="Call hello"
+        title="Call server"
         onPress={() => {
           console.log("Calling hello");
-          server.hello().then(setHello);
+          server.hello().then(setResult);
         }}
       />
 
