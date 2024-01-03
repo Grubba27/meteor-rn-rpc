@@ -13,10 +13,10 @@ const createProxyClient = <T>(
       return createProxyClient([...path, key]);
     },
     apply(_1, _2, args) {
-      const lastArg = path.at(-1);
-      if (lastArg === "useQuery" || lastArg === "useMutation") {
-        path = path.slice(0, -1);
-      }
+      // const lastArg = path.at(-1);
+      // if (lastArg === "useQuery" || lastArg === "useMutation") {
+      //   path = path.slice(0, -1);
+      // }
 
       const name = path.join(".");
 
