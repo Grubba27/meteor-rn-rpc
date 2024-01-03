@@ -62,4 +62,5 @@ server. // you can see the RPCs here that we defined in the server
 
 ## Demo:
 
-[![Video](https://github.com/Grubba27/meteor-rn-rpc/assets/70247653/70247653/35e44b70-6bfa-41db-aaac-d43cbd384d32)](https://youtu.be/7GvcoRP3oqM)
+
+[![Video](https://github.com/Grubba27/meteor-rn-rpc/assets/70247653/2490be56-07d3-4e63-bdbc-48b41e0f97aa)](https://youtu.be/7GvcoRP3oqM)
