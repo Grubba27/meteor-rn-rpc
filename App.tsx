@@ -21,14 +21,12 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
       <Text>Result: {result}</Text>
-
       <Button
         title="Call server"
         onPress={() => {
-          console.log("Calling hello");
-          server.hello().then(setResult);
+          console.log("Calling server");
+          server.echo("other thing").then(setResult);
         }}
       />
 
