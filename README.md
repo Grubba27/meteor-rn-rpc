@@ -59,3 +59,7 @@ const server = createClient<Server>();
 server. // you can see the RPCs here that we defined in the server
 
 ```
+
+## Demo:
+
+[![Video](https://github.com/Grubba27/meteor-rn-rpc/assets/70247653/033df467-2b06-4a7c-952c-1265248b434f)](https://youtu.be/7GvcoRP3oqM)
